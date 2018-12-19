@@ -16,4 +16,7 @@
 ---
 * How to decouple the navigation buttons from the individual paths
 * How to decouple the navigation paths from the views
+* How to handle validation for fields in the scenario where there are many, non-binary fields on a page
+* How to handle "remembering" what inputs were chosen?
+* How to handle redirecting a user to the last completed step?
 
