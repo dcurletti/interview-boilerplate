@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { connect } from "react-redux";
 import { increment } from "../actions";
+import { counterSelector } from "../selectors";
 
 
 function Page({ counter, dispatch }) {
@@ -18,7 +19,7 @@ function Page({ counter, dispatch }) {
 }
 
 function mapStateToProps(state) {
-  return { counter: state.counter };
+  return { counter: counterSelector(state) };
 }
 
-export default connect(state => state)(Page);
+export default connect(mapStateToProps)(Page);
