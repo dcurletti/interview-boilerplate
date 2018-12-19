@@ -1,3 +1,3 @@
 async function apiCall() {
-    return true
+  return Math.random() >= 0.5;
 }
